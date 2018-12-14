@@ -1,0 +1,531 @@
+.header {
+    background-color: transparent;
+    padding: 10px;
+    padding-left: 47%;
+    z-index: 0;
+    position: fixed;
+    justify-content: center;
+    font-weight: 700;
+
+}
+
+body {
+    font-family: 'Rubik';
+    /*  background-color: #fbf6f0;*/
+    background-color: #f4f0ea;
+}
+
+.hamburger {
+    margin-left: 20px;
+    padding-top: 25px;
+    z-index: 1;
+}
+
+
+
+a {
+    color: #7f7f7f;
+}
+
+a:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(56, 158, 102, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: lightgray;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .icon {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+
+
+
+
+.z0 {
+    z-index: 0;
+}
+
+.z1 {
+    z-index: 1;
+}
+
+.z2 {
+    z-index: 2;
+}
+
+.z3 {
+    z-index: 3;
+}
+
+
+
+
+.cloud {
+    position: fixed;
+    z-index: -1;
+}
+
+.fixed {
+    position: fixed;
+}
+
+
+
+
+
+.greengarden {
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.greenhouse {
+    margin-left:10%;
+    margin-top: 1%;
+    position: fixed;
+}
+
+
+.pinkhouse {
+    margin-left: 40%;
+    margin-top:0%;
+    position: fixed;
+
+}
+
+.pinkgarden {
+    margin-left: 31.5%;
+    margin-top:1%;
+}
+
+.bluegarden {
+    margin-left: 62%;
+    margin-top:5%;
+}
+
+.bluehouse {
+    margin-left: 71%;
+    margin-top: -7%;
+    position: fixed;
+}
+
+
+.talk {
+    margin-top: 10%;
+    font-weight: 900;
+    color: #3d9f66;
+    justify-content: center;
+    text-align: center;
+}
+
+.teach {
+    margin-top: 8%;
+    font-weight: 900;
+    color: #f6a29a;
+    justify-content: center;
+    text-align: center;
+}
+
+.trust {
+    margin-top:2%;
+    font-weight: 900;
+    color: #2e8dbd;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro {
+    margin-top: 0%;
+    margin-left:11%;
+    font-weight: 700;
+    color: #7f7f7f;
+}
+
+
+
+
+p {
+    font-size: 16pt;
+    font-weight: 700;/*bold*/
+    line-height: 125%;
+}
+
+h3 {
+    font-size: 32pt;
+    font-weight: 900; /*black*/
+    line-height: 125%;
+}
+
+h2 {
+    font-size: 48pt;
+    font-weight: 900; /*black*/
+    line-height: 125%;
+}
+
+h1 {
+    font-size: 80pt;
+    font font-weight: 900;/*black*/
+    line-height: 113%;
+}
+
+/*
+.h3bold{
+    font-size: 32pt;
+    font-weight: 700; bold
+    line-height: 125%;
+}
+
+.h2bold {
+    font-size: 48pt;
+    font-weight: 700; bold
+    line-height: 125%;
+}
+
+.h1bold {
+    font-size: 80pt;
+    font font-weight: 700;bold
+    line-height: 113%;
+}
+
+*/
+
+/*BOUNCING CSS COPIED FROM FORUM*/
+/*///////////Bounce when opening the page//////*/
+
+@keyframes bouncing {
+
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -4px, 0);
+    }
+}
+.bouncing {
+    position: absolute;
+    animation-duration: 2s;
+    animation-name: bouncing;
+    animation-iteration-count: 1;
+}
+
+.bouncinghover:hover {
+    animation-play-state: running;
+
+}
+
+.bouncing:visited {
+    animation-play-state: paused;
+}
+
+/*END OF BOUNCING CSS COPIED FROM FORUM*/
+
+
+
+
+
+
+/*/////////////Hover bounce///////////*/
+
+@keyframes bouncinghover {
+
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+.bouncinghover {
+    position: absolute;
+    animation-duration: 1.5s;
+    animation-name: bouncinghover;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.bouncinghover:hover {
+    animation-play-state: running;
+
+}
+
+/*END OF BOUNCING CSS COPIED FROM FORUM*/
+
+
+/*
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(0.5px) translateZ(0);
+    transform: perspective(0.5px) translateZ(0);
+    box-shadow: 0 0 0.5px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    color: #3d9f66;
+}
+*/
+
+
+/*//////MOBILE STUFF/////*/
+
+
+@media only screen and (max-width: 767.98px) 
+{
+    .intro {
+        margin-top: 7%;
+        margin-left: 15%;
+        margin-right: 15%;
+        z-index: 0;
+    }
+
+    .header {
+        padding-left: 40%;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 40pt;
+        
+    }
+
+    h3 {
+        text-align: center;
+/*        font-size: 32pt;*/
+        margin-top: 0%;
+        font-weight: 700;/*bold*/
+    }
+
+    .icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .carousel {
+        margin-top: 9%;
+    }
+    .carousel2 {
+        margin-top: 9%;
+    }
+    
+
+    /*carousel controllers are svgs so needed to change the fill*/
+   
+   .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#7f7f7f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+    .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#7f7f7f' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+} 
+    
+    .carousel-indicators li {
+        
+       /* margin-top: 30px;*/
+     display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color:  lightgray; 
+   /* box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5); */   
+}
+    .carousel-indicators .active {
+        width: 15px;
+        height: 15px;
+        margin: 10px;
+        background-color: #7f7f7f;
+}
+
+    .carousel-indicators {
+        bottom: -15px;
+}
+
+/*} closing @media relating to mobile*/
+	
+	
+/*LOADING ICON below - not activated yet as interferes with bouncing houses	*/
+	
+
+/*	
+.loader {
+    text-align: center;    
+}
+.loader span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin: 50px auto;
+    background: black;
+    border-radius: 50px;
+    -webkit-animation: loader 0.9s infinite alternate;
+    -moz-animation: loader 0.9s infinite alternate;
+}
+.loader span:nth-of-type(2) {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+}
+.loader span:nth-of-type(3) {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+@-webkit-keyframes loader {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0.9;
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    width: 24px;
+    height: 24px;
+    opacity: 0.1;
+    -webkit-transform: translateY(-21px);
+  }
+}
+@-moz-keyframes loader {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0.9;
+    -moz-transform: translateY(0);
+  }
+  100% {
+    width: 24px;
+    height: 24px;
+    opacity: 0.1;
+    -moz-transform: translateY(-21px);
+  }
+}*/
+	
+	
+/*SOCIAL MEDIA settings	*/
+	
+	
+/* Style all font awesome icons */
+/*.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+ Add a hover effect if you want 
+.fa:hover {
+    opacity: 0.7;
+}	
+	*/
+
+	/* Set a specific color for each brand */
+
+/* Facebook */
+/*
+.fa-facebook {
+    background: gray;
+    color: white;
+}
+
+ Twitter 
+.fa-twitter {
+    background: gray;
+    color: white;
+}
+*/
+
+/* Instagram */
+.fa-instagram {
+    background: gray;
+    color: white;
+}
